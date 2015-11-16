@@ -1,0 +1,83 @@
+\documentclass[a4paper, 11pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[total={15cm,30cm}, top=1cm, left=2cm, right=2cm]{geometry} % okraje 
+\pagestyle{empty} % zrušení číslování
+
+\newcommand\chord[2][l]{ % akordy
+  \makebox[0pt][#1]{\textbf{\begin{tabular}[b]{@{}l@{}}#2\\\mbox{}\end{tabular}}}}
+
+\def\everypar{\parindent=0cm} % zrušení odsazování odstavců
+
+\begin{document}
+\begin{LARGE}
+
+\hspace{1cm}
+
+\begin{flushleft}
+	\section*{\Huge BUĎ VÔĹA TVOJA }
+	\emph{Krížik}
+\end{flushleft}
+
+\chord{Ami}Denne sa modlím: \chord{Fmaj\textsuperscript{7}}Buď vôľa Tvoja,\\ 
+\chord{C}Pri tom prosím len \chord{G}nech je ako moja.\\ 
+\chord{Ami}Nie je to ľahké \chord{Fmaj\textsuperscript{7}}prijať to, čo nechcem,\\
+\chord{C}Môže to bolieť, \chord{G}keď pokorný byť \chord{Ami}neviem.\\
+\\
+Ja som chcel niečo a veril, že aj ty chceš,\\ 
+A dnes už viem to, iba Ty poznáš odpoveď.\\
+Čo sa zdá blízko, Ty vidíš veľmi vzdialené,\\ 
+Čo ja chcem rýchlo, pre Teba nie je podstatné.\\
+\\
+\textregistered:\\
+$2\times$ \chord{Ami}[Buď \chord{F}vôľa Tvoja,\\
+\chord{C}aj keď \chord{G}iná je než tá \chord{A}moja,\\ 
+\chord{Ami}Buď \chord{F}všetko, čo chceš \chord{C}Ty.] \chord{G}\\
+\\
+Preto sa modlím, nech vôľa moja,\\
+O to Ťa prosím, nech je ako Tvoja.\\ 
+Nauč ma prijímať z Tvojej ruky všetko,\\ 
+Nechcem už snívať a potom sa pýtať: Prečo. 
+
+\newpage
+
+\begin{flushleft}
+	\section*{\Huge STONKA}
+	\emph{Kristina}
+\end{flushleft}
+
+\chord{Ami}Líham si \chord{G}ťažká na ľahkú \chord{Ami}zem, 
+čo som ti \chord{C}chcela \chord{G}nedopo\chord{Ami}viem.\\
+Líhaš si \chord{G}plný smútku a rán, 
+chceš zakryť \chord{G}slnko a zostať \chord{Ami}sám.\\
+\\
+Čo bude s láskou čo bude s ňou,
+čo s jednou stonkou odtrhnutou.\\
+Líham si s tebou na ľahkú zem,
+na steble slzu neunesiem.\\
+\\
+\textregistered: $2\times$ \chord{C}[Čo bolo \chord{G}včera nebýva \chord{Dmi\textsuperscript{7}}dnes,\\
+na veľkú \chord{Ami}bolesť raz \chord{C}zabudneš.\\
+V stonke sa \chord{G}zlomia najkrajšie \chord{Dmi}sny,\\
+ktoré späť \chord{Ami}nikto \chord{G}nevymo\chord{C}dlí.]\\
+\\
+Šepká mi tráva daj mi svoj plač,
+zahoď tú stonku čo v prstoch máš.\\
+Vyplač sa zo snov no tak to skús,
+ja zmením smútok na ranný lúč.\\
+\\
+Slnečný deň a usmiata tvár,
+tak si ťa navždy zapamätám.\\
+Tajomstvá v tráve takých viac niet,
+v prstoch si krútim už iný kvet.\\
+\\
+\textregistered:\\
+medzihra:\\
+\chord{G}\hspace{0.5cm}\chord{Dmi}\hspace{1.2cm}\chord{Ami}\hspace{1.2cm}\chord{C}\hspace{0.5cm}\chord{G}\hspace{0.5cm}\chord{Dmi}\hspace{1.2cm}\chord{Ami}\hspace{1.2cm}\chord{G}\hspace{0.5cm}\chord{Ami}\hspace{1.2cm}\chord{G}\hspace{0.5cm}\chord{Ami}\hspace{1.2cm}\chord{G} 
+
+\textregistered:\\
+
+
+\end{LARGE}
+
+\end{document}
