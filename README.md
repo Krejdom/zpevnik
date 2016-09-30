@@ -5,6 +5,11 @@ LaTeXová šablona pro vytváření textů s akordy. Neváhejte ji vylepšit neb
 
 STÁHNOUT PDF: http://krejdom.cz/file/zpevnik.pdf
 
+## Konvence
+* Snažte se zachovávat styl dle ostatních písniček.
+* Písnička by se měla vléz na jednu stránku (při zobrazování na mobilních zařízení se nemusí "obracet strana").
+* Na začátek refrénu vepište `\textregistered:` a zbytek refrénu zvýrazněte pomocí `\emph{}`.
+
 -------------------
 
 SONG BOOK
