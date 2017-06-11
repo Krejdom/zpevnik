@@ -1,17 +1,31 @@
 \documentclass[a4paper, 10pt]{book}
+% nastav kodovani na vstupe
 \usepackage[utf8]{inputenc}
+% nastav jazyk
 \usepackage[czech]{babel}
+% moznost dvousloupcovych stran
 \usepackage{multicol}
-\usepackage[top=1.5cm, left=2cm, right=2cm, bottom=1cm]{geometry} % okraje
+% uprava rozmeru strany a okraju
+\usepackage[top=1.5cm, left=2cm, right=2cm, bottom=1cm]{geometry}
+% moznost barevneho textu
 \usepackage{color}
 
 \definecolor{mygray}{gray}{0.6} % šedá barva pro dvojjazyčné písně
 \pagestyle{empty} % zrušení číslování
+\def\everypar{\parindent=0cm} % zrušení odsazování odstavců
 
 \newcommand\chord[2][l]{ % akordy
   \makebox[0pt][#1]{\textbf{\begin{tabular}[b]{@{}l@{}}#2\\\mbox{}\end{tabular}}}}
 
-\def\everypar{\parindent=0cm} % zrušení odsazování odstavců
+% nadpisy
+\newcommand{\song}[2]{%
+\section*{\Huge\expandafter\MakeUppercase\expandafter{#1}}
+\vspace{-1em}\emph{#2}\newline
+}
+
+% refren
+\newcommand{\chorustext}[1]{\textregistered:\emph{#1}}
+\newcommand{\chorushere}{\hspace{1em}\textregistered\hspace{1em}}
 
 \begin{document}
 
