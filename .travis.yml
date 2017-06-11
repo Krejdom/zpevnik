@@ -6,9 +6,9 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: g8Azi0jOp1WzZxUkSFNRbYumbHUd304a/9P4osk+E0Z2Xg/MmzSrDD3PdgiLEY3lCzQsvdnhXr34Vg0O1NwluxcEXTxCyqvWWdbOCNgQJ40pSE5A2RdDpE8XUbDWXVdImB+Bt0+5uCWEr6WB5htmAsdQgMkdSeG5LPFrNEsefp2yCFXcprDY8ZW+kSh3nl7Jnx9B+qawmyetlpTiXYaG1H+IEbz2RIVqRBl9bZIxxOAsW0CkmcJF7vn1uAfE5pHZNXdNKEmLPd7lud6y95AeU2Yy2yUBC1wl7tk3fLwXZyOYJLClrJWUHBymGdjwcthFzSZTqFwGZ+xlwvE0TRxXR0MJAP1L2SHz/rCd/ro34mS1Yxtpf3eRdIfl4InfHgS4vhnmPBO7JF452TVXTlSJcigPumhZn8w1USSDNB7Sf0W8HGUM9dRYYyiSATJV6mqXUNkjJr/WsEl1EDXpjcVIt6k1/WVkpT38rBEo7ZjMKajaoarYJqQ0oHuWI19cMCXxzbVXjHETAIShWFlWPdOOfNZSjxu0hp0ZbPwtnqTxpSGxF+KTk37Dqr7hjYQ0xONeXO83bJwpaV4BzJFep3J54ErcsQtYdA922XcqE/lqDrnYuqIUEgiMlWu164pXpHGa3+czAFdJlgjReBdqBkoZgwT8sZX6MmrJi9eAXjaySLg=
+    secure: [encrypted API key here]
   file: zpevnik.pdf
   skip_cleanup: true
   on:
     tags: true
-    repo: mukrop/zpevnik
+    repo: Krejdom/zpevnik
