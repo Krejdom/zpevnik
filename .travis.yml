@@ -1,0 +1,14 @@
+before_install:
+- sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng
+script:
+- make all
+deploy:
+  provider: releases
+  api_key:
+    secure: [encrypted API key here]
+  file: zpevnik.pdf
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: Krejdom/zpevnik
