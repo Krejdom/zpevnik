@@ -1,144 +1,75 @@
-\documentclass[a4paper, 10pt]{book}
-% nastav kodovani na vstupe
+\documentclass[a4paper, 12pt]{book}
+
+% úprava rozměrů strany a okrajů
+\usepackage[top=1.5cm, left=1.5cm, right=1.5cm, bottom=1.5cm]{geometry}
+
+% nastav kódování na vstupu
 \usepackage[utf8]{inputenc}
+
 % nastav jazyk
 \usepackage[czech]{babel}
-% moznost dvousloupcovych stran
-\usepackage{multicol}
-% uprava rozmeru strany a okraju
-\usepackage[top=1.5cm, left=2cm, right=2cm, bottom=1cm]{geometry}
-% moznost barevneho textu
-\usepackage{color}
 
-\definecolor{mygray}{gray}{0.6} % šedá barva pro dvojjazyčné písně
-\pagestyle{empty} % zrušení číslování
-\def\everypar{\parindent=0cm} % zrušení odsazování odstavců
+% zrušení číslování
+\pagestyle{empty}
 
-\newcommand\chord[2][l]{ % akordy
-  \makebox[0pt][#1]{\textbf{\begin{tabular}[b]{@{}l@{}}#2\\\mbox{}\end{tabular}}}}
+% zrušení odsazování odstavců
+\def\everypar{\parindent=0cm}
 
-% nadpisy
+% neproporcionální písmo
+\renewcommand*\familydefault{\ttdefault}
+
+% jednotný formát názvů písní a interpretů
 \newcommand{\song}[2]{%
 \section*{\Huge\expandafter\MakeUppercase\expandafter{#1}}
 \vspace{-1em}\emph{#2}\newline
 }
 
+\usepackage{pdfpages}
+
 % refren
-\newcommand{\chorustext}[1]{\textregistered:\emph{#1}}
-\newcommand{\chorus}{\hspace{1em}\textregistered\hspace{1em}}
+\newenvironment{chorustext}{\begin{em}}{\end{em}}
+
+\newcommand{\chorus}{\textregistered}
+
+\newcommand{\7}{\textsuperscript{7}}
+\newcommand{\9}{\textsuperscript{9}}
 
 \begin{document}
 
-\input{obsah}
+\includepdf{titulka.pdf}
 
-\begin{LARGE}
+\input{obsah.tex}
 
-\input{pisnicky/all_you_need_is_love}
-\input{pisnicky/amavi_te_puella}
 \input{pisnicky/amerika}
-\input{pisnicky/andel}
-\input{pisnicky/atentat}
 
-\input{pisnicky/bim_bam}
-\input{pisnicky/blowin_in_the_wind}
-\input{pisnicky/bonsoir_mademoiselle_pari}
-\input{pisnicky/bud_vola_tvoja}
-\input{pisnicky/buraky}
+\input{pisnicky/bedna_od_whisky}
 
-\input{pisnicky/cesta}
-\input{pisnicky/counting_stars}
-\input{pisnicky/cups}
-\input{pisnicky/cysta}
-
-\input{pisnicky/carodejnice_z_amesbury}
-\input{pisnicky/cerni_andele}
-\input{pisnicky/cerny_muz}
-\input{pisnicky/cert_vi_kdy_kotvy_zvednem}
-\input{pisnicky/cervena_reka}
+\input{pisnicky/colorado}
 
 \input{pisnicky/darmodej}
-\input{pisnicky/den_je_krasny}
-\input{pisnicky/dobry_vaclav_kral}
-\input{pisnicky/dokud_se_zpiva}
-\input{pisnicky/drunken_sailor}
-\input{pisnicky/dum_u_vychazejiciho_slunce}
 
-\input{pisnicky/every_breath_you_take}
-
-\input{pisnicky/falling_slowly}
+\input{pisnicky/frantisek}
 
 \input{pisnicky/gastrosexual}
-\input{pisnicky/good_king_wenceslas}
 
-\input{pisnicky/happy_ending}
-\input{pisnicky/hey_jude}
-\input{pisnicky/hlidac_krav}
-\input{pisnicky/hrobar}
-\input{pisnicky/hrisna_tela_kridla_motyli}
-\input{pisnicky/hvezdicko_blyskava}
-\input{pisnicky/hvezdy_se_meni}
+\input{pisnicky/hej_clovece_bozi}
 
-\input{pisnicky/christmas_is_all_around}
+\input{pisnicky/jdem_zpatky_do_lesu}
 
-\input{pisnicky/irsky_hody}
+\input{pisnicky/lasko}
 
-\input{pisnicky/jablicko}
-\input{pisnicky/japonecka}
-\input{pisnicky/jaro}
-
-\input{pisnicky/kdyz_nas_tata_hral}
-\input{pisnicky/komari_se_zenili}
-\input{pisnicky/kozel}
-
-\input{pisnicky/lag_song}
-\input{pisnicky/lachtani}
-\input{pisnicky/lokomotiva}
-
-\input{pisnicky/mad_world}
 \input{pisnicky/mezi_horami}
-\input{pisnicky/morituri_te_salutant}
 
-\input{pisnicky/na_kolena}
-\input{pisnicky/na_na_na}
-\input{pisnicky/nagasaki_hirosima}
-\input{pisnicky/nebude_to_lahke}
+\input{pisnicky/promeny}
 
-\input{pisnicky/obchodnik_s_destem}
-\input{pisnicky/okno_me_lasky}
-\input{pisnicky/okor}
-
-\input{pisnicky/pata}
-\input{pisnicky/po_schodoch}
-\input{pisnicky/pocit}
-\input{pisnicky/prvni_den_na_fakulte_informatiky}
-
-\input{pisnicky/raci_v_praci}
 \input{pisnicky/rada_se_miluje}
-\input{pisnicky/radioactive}
-\input{pisnicky/rekni_kde_ty_kytky_jsou}
 
-\input{pisnicky/starosta}
-\input{pisnicky/stonka}
-\input{pisnicky/strom}
+\input{pisnicky/sara}
 
-\input{pisnicky/s_s_s}
-\input{pisnicky/snecek}
+\input{pisnicky/vcelin}
 
-\input{pisnicky/touha}
-\input{pisnicky/tri_citronky}
-\input{pisnicky/tri_cunici}
-\input{pisnicky/tucnak_z_antarktidy}
-
-\input{pisnicky/v_blbym_veku}
-\input{pisnicky/vecnost}
-\input{pisnicky/vezmi_ma}
+\input{pisnicky/warriors}
 
 \input{pisnicky/zafukane}
-\input{pisnicky/zvednete_kotvy}
-
-\input{pisnicky/zeny}
-\input{pisnicky/zily}
-
-\end{LARGE}
 
 \end{document}
